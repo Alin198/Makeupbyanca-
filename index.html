@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Make-up by Anca</title>
+  <meta name="description" content="Make-up by Anca — machiaj în Rotopănești. Programări online.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="logo">MAKE-UP BY ANCA <span>Anca Onofrei</span></div>
+  <nav>
+    <a href="#servicii">Servicii</a>
+    <a href="#galerie">Galerie</a>
+    <a href="#programari">Programări</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="btn" href="#programari">PROGRAMEAZĂ-TE</a>
+</header>
+
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">Bun venit la</p>
+    <h1>MAKE-UP BY ANCA</h1>
+    <h2>Anca Onofrei</h2>
+    <p>Machiaj care îți pune frumusețea în valoare.</p>
+    <a class="btn big" href="#programari">PROGRAMEAZĂ-TE</a>
+  </div>
+  <div class="hero-image">
+    <img src="hero-placeholder.png" alt="Machiaj elegant — imagine provizorie">
+  </div>
+</section>
+
+<section id="servicii" class="section">
+  <p class="eyebrow">SERVICII</p>
+  <h2>Ce îți ofer</h2>
+  <div class="cards">
+    <article><h3>Machiaj de zi</h3><p>Machiaj natural, adaptat trăsăturilor tale.</p><strong>PREȚ DE STABILIT</strong></article>
+    <article><h3>Machiaj de eveniment</h3><p>Un look elegant pentru orice ocazie.</p><strong>PREȚ DE STABILIT</strong></article>
+    <article><h3>Machiaj de mireasă</h3><p>Un machiaj special pentru ziua ta.</p><strong>PREȚ DE STABILIT</strong></article>
+    <article><h3>Gene false</h3><p>Aplicare pentru un look spectaculos.</p><strong>PREȚ DE STABILIT</strong></article>
+  </div>
+</section>
+
+<section id="galerie" class="section gallery-section">
+  <p class="eyebrow">GALERIE</p>
+  <h2>Lucrările mele</h2>
+  <div class="gallery">
+    <div>Fotografiile vor apărea aici</div><div>Fotografiile vor apărea aici</div>
+    <div>Fotografiile vor apărea aici</div><div>Fotografiile vor apărea aici</div>
+    <div>Fotografiile vor apărea aici</div><div>Fotografiile vor apărea aici</div>
+  </div>
+  <p class="note">Galeria este pregătită pentru fotografiile reale ale Ancăi.</p>
+</section>
+
+<section id="programari" class="booking">
+  <div>
+    <p class="eyebrow">PROGRAMĂRI ONLINE</p>
+    <h2>Programează-te simplu și rapid</h2>
+    <p>Alege serviciul, data și ora preferată. Telefonul va fi adăugat ulterior.</p>
+    <ul>
+      <li>Alege serviciul</li>
+      <li>Alege data și ora</li>
+      <li>Completează datele de contact</li>
+    </ul>
+  </div>
+  <form onsubmit="saveBooking(event)">
+    <label>Serviciu
+      <select required>
+        <option value="">Selectează</option>
+        <option>Machiaj de zi</option>
+        <option>Machiaj de eveniment</option>
+        <option>Machiaj de mireasă</option>
+        <option>Gene false</option>
+      </select>
+    </label>
+    <label>Data <input type="date" required></label>
+    <label>Ora <input type="time" required></label>
+    <label>Nume <input type="text" placeholder="Numele tău" required></label>
+    <label>Telefon <input type="tel" placeholder="07xx xxx xxx" required></label>
+    <button class="btn" type="submit">TRIMITE PROGRAMAREA</button>
+    <small id="status"></small>
+  </form>
+</section>
+
+<section id="contact" class="contact">
+  <div><p class="eyebrow">CONTACT</p><h2>Make-up by Anca</h2><p>📍 Rotopănești, Suceava</p><p>📞 Numărul de telefon va fi adăugat ulterior</p></div>
+  <div><p class="eyebrow">PROGRAM</p><p>Luni–Vineri: de stabilit</p><p>Sâmbătă: de stabilit</p><p>Duminică: închis</p></div>
+</section>
+
+<footer>© 2026 Make-up by Anca. Toate drepturile rezervate.</footer>
+<script>
+function saveBooking(e){
+  e.preventDefault();
+  document.getElementById('status').textContent =
+    'Cererea a fost înregistrată local în această demonstrație. Pentru programări reale vom conecta formularul la un sistem online.';
+}
+</script>
+</body>
+</html>
