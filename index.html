@@ -101,9 +101,10 @@ function saveBooking(e){
   const nume = form.querySelector('input[type="text"]').value;
   const telefon = form.querySelector('input[type="tel"]').value;
 
-  const mesaj = `Bună! Vreau să fac o programare.%0A%0AServiciu: ${serviciu}%0AData: ${data}%0AOra: ${ora}%0ANume: ${nume}%0ATelefon: ${telefon}`;
+  const mesaj = `Bună! Vreau să fac o programare.Serviciu: ${serviciu} Data: ${data} Ora: ${ora} Nume: ${nume} Telefon: ${telefon}`;
 
-  window.open(`https://wa.me/40756862242?text=${mesaj}`, '_blank');
+window.open(`https://wa.me/40756862242?text=${encodeURIComponent(mesaj)}`, '_blank');
+  
 
   document.getElementById('status').textContent =
     'Programarea a fost pregătită pentru trimitere pe WhatsApp.';
