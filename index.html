@@ -91,11 +91,27 @@
 
 <footer>© 2026 Make-up by Anca. Toate drepturile rezervate.</footer>
 <script>
-function saveBooking(e){
+functfunction saveBooking(e){
+  e.preventDefault();
+
+  const form = e.target;
+  const serviciu = form.querySelector('select').value;
+  const data = form.querySelector('input[type="date"]').value;
+  const ora = form.querySelector('input[type="time"]').value;
+  const nume = form.querySelector('input[type="text"]').value;
+  const telefon = form.querySelector('input[type="tel"]').value;
+
+  const mesaj = `Bună! Vreau să fac o programare.%0A%0AServiciu: ${serviciu}%0AData: ${data}%0AOra: ${ora}%0ANume: ${nume}%0ATelefon: ${telefon}`;
+
+  window.open(`https://wa.me/40756862242?text=${mesaj}`, '_blank');
+
+  document.getElementById('status').textContent =
+    'Programarea a fost pregătită pentru trimitere pe WhatsApp.';
+}
   e.preventDefault();
   document.getElementById('status').textContent =
     'Cererea a fost înregistrată local în această demonstrație. Pentru programări reale vom conecta formularul la un sistem online.';
-}
+
 </script>
 </body>
 </html>
