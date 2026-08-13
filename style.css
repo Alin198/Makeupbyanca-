@@ -6,7 +6,7 @@
 }
 
 .gallery > div {
-    aspect-ratio: 3 / 4;
+    aspect-ratio: auto !important;
     overflow: hidden;
     border-radius: 22px;
     background: #f5eeee;
