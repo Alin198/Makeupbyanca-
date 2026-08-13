@@ -6,11 +6,10 @@
 }
 
 .gallery > div {
-  height: auto !important;
-  overflow: visible;
-  border-radius: 22px;
-  background: #f5eeee;
-
+    aspect-ratio: 3 / 4;
+    overflow: hidden;
+    border-radius: 22px;
+    background: #f5eeee;
 }
 
 .gallery img {
