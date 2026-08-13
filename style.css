@@ -52,3 +52,28 @@
     object-fit: contain !important;
     border-radius: 22px;
 }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              }
+.gallery {
+    display: block !important;
+    columns: 2 !important;
+    column-gap: 14px !important;
+    padding: 0 14px !important;
+}
+
+.gallery > div {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 0 14px 0 !important;
+    break-inside: avoid !important;
+    overflow: hidden !important;
+    border-radius: 22px !important;
+    background: #f5eeee;
+}
+
+.gallery img {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+    border-radius: 22px !important;
+}
